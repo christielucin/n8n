@@ -32,4 +32,4 @@ WORKDIR /data
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 ENTRYPOINT ["tini", "--", "/docker-entrypoint.sh"]
 
-EXPOSE 5678/${PORT}
+EXPOSE ${PORT}/8080
